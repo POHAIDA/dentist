@@ -1,0 +1,376 @@
+.what_servises-title {
+    text-align: center;
+    padding-top: 70px;
+}
+.title_4_main {
+    font-family: 'Roboto';
+    font-size: 34px;
+    line-height: 130%;
+    span{
+        color: #46B1DE;
+    }
+}
+.name_servises {
+    display: grid;
+    grid-template-rows: repeat(3 200px);
+    grid-template-columns: 500px 200px 500px;
+    width: 100%;
+    min-height: 600px;
+    justify-content: center;
+}
+.title_servises {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: #46B1DE;
+    text-align: right;
+}
+.text_right{
+    text-align: left;
+}
+.subtitle_servises{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 19px;
+    color: #1B1D1F;
+}
+.servises_block-1 {
+    padding-left: 90px;
+    width: 300px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: right;
+    align-self: flex-end;
+    animation-name: servises_block-1;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes servises_block-1{
+        0%{
+            transform:translatey(-140px)translatex(-140px);
+            opacity: 0;
+        }
+    }
+}
+
+.servises_block-2 {
+    padding-left: 70px;
+    width: 280px;
+    text-align: right;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: flex-end;
+    animation-name: servises_block-2;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes servises_block-2{
+        0%{
+            transform:translatex(-180px);
+            opacity: 0;
+        }
+    }
+}
+
+.servises_block-3 {
+    width: 340px;
+    padding-left: 110px;
+    text-align: right;
+    grid-column:1/4 ;
+    grid-row: 3/4 ;
+    align-self: flex-end;
+    animation-name: servises_block-3;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes servises_block-3{
+        0%{
+            transform: translatey(140px) translatex(-140px); 
+            opacity: 0;
+        }
+    }
+}
+
+.servises_block-4 {
+    padding-left: 100px;
+    width: 300px;
+    grid-column:3/4 ;
+    grid-row: 1/2 ;
+    align-self: flex-end;
+    animation-name: servises_block-4;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes servises_block-4{
+        0%{
+            transform: translatey(-140px) translatex(140px); 
+            opacity: 0;
+        }
+    }
+}
+
+.servises_block-5 {
+    padding-left: 130px;
+    width: 300px;
+    grid-column:3/4 ;
+    grid-row: 2/3;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    animation-name: servises_block-5;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes servises_block-5{
+        0%{
+            transform:translatex(180px);
+            opacity: 0;
+        }
+    }
+}
+
+.servises_block-6 {
+    padding-left: 40px;
+    width: 300px;
+    grid-column:3/4 ;
+    grid-row: 3/4 ;
+    align-self: flex-end;
+    animation-name: servises_block-6;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes servises_block-6{
+        0%{
+            transform: translatey(140px) translatex(140px);
+            opacity: 0;
+        }
+    }
+}
+.teeth_circle {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    align-self: center;
+    margin: 0 auto;
+ }
+ .teeth_circle img{
+     padding: 80px;
+     width: 180px;
+     height: 162px;
+     border: solid 1px black;
+     border-radius: 100%;
+ }
+ .plus{
+     grid-column: 1/2;
+     grid-row: 1/2;
+     justify-self: end;
+     align-self: center;
+     padding-top: 85px;
+     animation-name: moving_plus;
+     animation-duration: 0.5s;
+     animation-delay: 3s;
+     animation-timing-function: linear;
+     @keyframes moving_plus{
+        0%{
+            transform: translatey(140px) translatex(140px);
+        }
+    }
+ }
+ 
+.plus-2 {
+    padding-right: 60px;
+    justify-self: end;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    animation-name: moving_plus-2;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes moving_plus-2{
+        0%{
+            transform:translatex(180px);
+        }
+    }    
+}
+
+.plus-3 {
+    padding-top: 20px;
+    justify-self: flex-end;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    animation-name: moving_plus-3;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes moving_plus-3{
+        0%{
+            transform:translatey(-140px)translatex(140px);
+        }
+    }    
+}
+
+.plus-4 {
+    padding-top: 85px;
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    animation-name: moving_plus-4;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes moving_plus-4{
+        0%{
+            transform: translatey(140px) translatex(-140px); 
+        }
+    }
+}
+
+.plus-5 {
+    padding-left: 60px;
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    animation-name: moving_plus-5;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes moving_plus-5{
+        0%{
+            transform:translatex(-180px);
+        }
+    }    
+}
+
+.plus-6 {
+    padding-top: 20px;
+    justify-self: flex-start;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    animation-name: moving_plus-6;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    @keyframes moving_plus-6{
+        0%{
+            transform:translatey(-140px)translatex(-140px);
+        }
+    }    
+}
+
+.plus_styles{
+    border: solid 1px #0591CC;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #0591CC;
+    width: 10px;
+    height: 10px;
+}
+.triangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_5 {
+    font-family: 'Roboto';
+    font-size: 20px;    
+    line-height: 140%;
+    color: #46B1DE;
+}
+@media(max-width:992px){
+    .name_servises {
+        display: grid;
+        grid-template-rows: repeat(3 200px);
+        grid-template-columns: 1fr 1fr;
+        width: 640px;
+        min-height: 600px;
+        column-gap:20px;
+        margin: 0 auto;
+    }
+    .title_servises {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 135%;
+        color: #46B1DE;
+        text-align: center;
+    }
+    .title_servises{
+        border: 1px solid #46B1DE;
+        width: 310px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .subtitle_servises{
+        font-family: "Roboto";
+        padding-top: 10px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 19px;
+        color: #1B1D1F;
+    }
+    .servises_block-1 {
+        padding: 0%;
+        max-width: 320px;
+        text-align: center;
+    }
+    .servises_block-2 {
+        padding: 0%;
+        max-width: 320px;
+        text-align: center;
+    }
+    .servises_block-3 {
+        max-width: 320px;
+        padding: 0%;
+        text-align: center;
+
+    }
+    .servises_block-4 {
+        padding: 0%;
+        max-width: 320px;
+        text-align: center;
+    }
+    .servises_block-5 {
+        padding: 0%;
+        max-width: 320px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .servises_block-6 {
+        padding: 0%;
+        max-width: 320px;
+        text-align: center;
+    }
+    .teeth_circle {
+       grid-column: 1/4;
+       grid-row: 1/4;
+       align-self: center;
+       margin: 0 auto;
+    }
+    .teeth_circle img{
+        display: none;
+    }
+    .plus,.plus-2,.plus-3,.plus-4,.plus-5,.plus-6{
+        display: none;
+    }
+}
+@media(max-width:640px){
+    .name_servises {
+        display: block;
+        max-width: 325px;
+        grid-template-columns: 1fr;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+   }
+    .subtitle_servises{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+   }
+   .servises_block-1,.servises_block-2,
+   .servises_block-3,.servises_block-4,
+   .servises_block-5,.servises_block-6{
+        text-align: center;
+   }
+}    

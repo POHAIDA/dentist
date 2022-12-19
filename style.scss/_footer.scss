@@ -1,0 +1,192 @@
+.footer_content {
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,100px 200px);
+    margin-top: 91px;
+    padding-left: 113px;
+    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+}   
+.logo_footer {
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    padding-top: 60px;
+    .footer_text {
+        font-family: 'Roboto';
+        line-height: 25px;
+        font-size: 38.7869px;
+        color:$colorblue_3;
+        span{
+            font-family: 'Roboto';
+            font-size: 26.8525px;
+            color:$colorblue_3;
+        }
+    }
+}
+.footer_nav {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 50px;
+    grid-column:1/2;
+    grid-row: 2/3; 
+    padding-top: 30px;
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: 'Roboto';
+        color:$colorblue_3;
+        font-size: 20px;
+        a{
+            font-family: "Roboto";
+            color:$colorblue_3;
+            &:hover{
+                color: white;
+            }   
+        }
+    }
+}
+.en-ua-footer{
+    display: flex;
+    color: #0F2D4A;
+    .en-footer:hover{
+        color: white;
+    }
+    .en-footer::after{
+        content: "";
+        border-right: 2px solid #0F2D4A;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .ua-footer:hover{
+        color: white;
+    }
+}
+.hours{
+    padding-top: 20px;
+    padding-left: 150px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: #0F2D4A;
+}
+.footer_contacts {
+    font-family:'Roboto';
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 174px;
+    line-height: 40px;
+    color: #FFFFFF;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self:end;
+    a{
+        color: white;
+    }
+}
+.footer_contacts ul li:nth-child(1){
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+.footer_contacts ul :nth-child(4)::before{
+    content: url(/img/icons/2849835-call-cell-communication-interface-multimedia-phone-telephone_108000\ 1.png);
+    padding-right: 10px;
+}
+.footer_contacts ul li:nth-child(6)::before{
+    content:url(/img/icons/icons8-instagram\ 1.png) ;
+    padding-right: 10px;
+}
+.footer_contacts ul li:nth-child(7)::before{
+    content:url(/img/icons/Email_icon-icons.com_55919\ 1.png);
+    padding-right: 5px;
+    
+}
+.footer_contacts ul :nth-child(4){
+    display: flex;
+}
+.footer_contacts ul :nth-child(6){
+    display: flex;
+}
+.footer_contacts ul :nth-child(7){
+    display: flex;
+}
+.footer_contacts ul li:nth-child(8){
+    font-size: 13px;
+    padding-left: 200px;
+}
+.footer_contacts ul li:not(:first-child):hover{
+    border-bottom: 1px solid white;
+}
+.footer_contacts ul a{
+    padding-right: 10px;
+}
+@media(max-width:1200px){
+    .footer_content{
+        padding-left: 40px;
+    }
+    .footer_contacts ul li:nth-child(8){
+        font-size: 13px;
+        position: absolute;
+       
+    }
+}
+@media(max-width:992px){
+    .footer_content{
+        display: block;
+        height: 720px;
+        padding-left: 10px;
+        
+    }
+    
+}
+@media(max-width:480px){
+    .footer_content{
+        display: block;
+        height: 720px;
+        padding-left: 10px;
+    }
+    .logo_footer{
+        display: flex;
+        width: 303px;
+        height: 65px;
+        line-height: 140%;
+    }
+    .footer_image img{
+        width: 55px;
+        height: 57px;
+    }
+    .footer_text{
+        position: absolute;
+        padding-left: 60px;
+        font-size: 27px;
+      
+    }
+    .footer_text span{
+        font-size: 19.1523px;
+    }
+    .nav{
+        padding: 0;
+        font-size: 14.2648px;
+        line-height: 135%;
+    }
+    .hours{
+        padding-left: 150px;
+        font-size: 14.2648px;
+        line-height: 135%;
+    }
+    .footer_contacts ul{
+        position: absolute;
+        font-size: 17.1613px;
+        margin-left: -40px;
+    }
+    .footer_contacts ul li:nth-child(8){
+        font-size: 11px;
+        padding-left: 200px;
+        position: relative;
+    } 
+    
+}

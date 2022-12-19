@@ -1,0 +1,58 @@
+$colorblue_1:#0591CC;
+$colorblue_2:#46B1DE;
+$colorblue_3: #0F2D4A;
+
+@mixin triangle-1($width,$color) {
+    width: $width;
+    color: $color;
+}
+.triangle-1{
+    @include triangle-1(0px,$colorblue_2)
+}
+@import"nullstyle";
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+}
+.wrapper {
+    background: url(/img/Rectangle\ 1.jpg)no-repeat;
+    background-size: 100% 680px;
+    max-width:100%; 
+}
+.container {
+    max-width: 100%;
+ }
+ @media(max-width:992px) {
+    body{
+        margin: 0;
+    }
+    .wrapper {
+        background: url(/img/Rectangle\ 1.jpg) no-repeat;
+        background-size:100% 690px;
+        max-width: 100%;
+    }
+    .container{
+        
+    }
+}
+@media(max-width:480px) {
+    body{
+        margin: 0;
+    }
+    .wrapper {
+        background: url(/img/Rectangle\ 1.jpg) no-repeat;
+        background-size:480px 567px;
+        width: 100%;
+    }
+    .container{
+    }
+}
+ @import"header";
+ @import"content";
+ @import"preference";
+ @import"what_servises";
+ @import"contacts";
+ @import"footer";
+ @import"template";
+ 
+ 
